@@ -33,7 +33,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@Client.on_message(command(["start", f"start@{Veez.BOT_USERNAME}"]))
+@Client.on_message(command(["vstart", f"vstart@{Veez.BOT_USERNAME}"]))
 async def start(_, m: Message):
     if m.chat.type == "private":
         await m.reply_text(
@@ -51,12 +51,12 @@ async def start(_, m: Message):
                         "🌐 Terms & Condition", callback_data="cbinfo")
                 ], [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/VeezSupportGroup"),
+                        "💬 Group", url="https://t.me/CozmoSupport_Official"),
                     InlineKeyboardButton(
-                        "📣 Channel", url="https://t.me/levinachannel")
+                        "📣 Channel", url="https://t.me/CozmoUpdates")
                 ], [
                     InlineKeyboardButton(
-                        "👩🏻‍💻 Developer", url="https://t.me/dlwrml")
+                        "👩🏻‍💻 Developer", url="https://t.me/Mr_Rasiyaa")
                 ], [
                     InlineKeyboardButton(
                         "📚 All Command List", callback_data="cblist")
